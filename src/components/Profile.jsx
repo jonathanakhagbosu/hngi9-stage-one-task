@@ -18,13 +18,24 @@ const Profile = () => {
       <img
         src={share}
         alt="share"
-        style={{ position: "absolute", top: 0, right: 0, cursor: "pointer" }}
+        style={{
+          position: "absolute",
+          top: 0,
+          right: 0,
+          cursor: "pointer",
+        }}
         className="share"
       />
       <img
         src={more}
         alt="share"
-        style={{ position: "absolute", top: 0, right: 0, cursor: "pointer" }}
+        style={{
+          position: "absolute",
+          top: 0,
+          right: 0,
+          cursor: "pointer",
+          marginRight: "-40px",
+        }}
         className="more"
       />
       <h1>Annette Black</h1>
