@@ -54,7 +54,7 @@ a:hover {
 }
 
 .m8 {
-  margin: 64px 0;
+  margin: 64px auto 52px;
 }
 
 #profile__img {
@@ -65,7 +65,13 @@ a:hover {
   filter: brightness(100%);
 }
 
-#profile__img:hover {
+.more {
+  display: none;
+}
+
+#profile__img:hover,
+.share:hover,
+.more:hover {
   filter: brightness(50%);
 }
 
@@ -96,8 +102,8 @@ footer {
     font-size: 18px;
   }
 
-  p,
-  a {
+  a,
+  p {
     font-weight: 500;
     line-height: 20px;
   }
@@ -106,6 +112,11 @@ footer {
     width: 100%;
   }
 
+  .more {
+    display: block;
+  }
+
+  .share,
   footer {
     display: none;
   }
