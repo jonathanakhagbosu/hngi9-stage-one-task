@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Profile from "./components/Profile";
+import Socials from "./components/Socials";
 
 const data = [
   {
@@ -35,6 +36,7 @@ const App = () => {
       {data.map((e, index) => {
         return <Links key={index} id={e.id} link={e.link} title={e.title} />;
       })}
+      <Socials />
       <Footer />
     </div>
   );
