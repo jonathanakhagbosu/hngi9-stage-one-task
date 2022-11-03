@@ -5,7 +5,9 @@ import "./contact.css";
 const Contact = () => {
   function handleSubmit(e) {
     e.preventDefault();
+    alert("Message sent!");
   }
+
   return (
     <div className="container">
       <div className="contact__container">
@@ -17,7 +19,7 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <div className="name__container">
             <div className="detail__container">
-              <label className="label" htmlFor="fName">
+              <label className="label" htmlFor="first_name">
                 First name
               </label>
               <input
@@ -25,10 +27,11 @@ const Contact = () => {
                 name="fName"
                 id="first_name"
                 placeholder="Enter your first name"
+                required
               />
             </div>
             <div className="detail__container">
-              <label className="label" htmlFor="lName">
+              <label className="label" htmlFor="last_name">
                 Last name
               </label>
               <input
@@ -48,6 +51,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="yourname@email.com"
+              required
             />
           </div>
           <div className="detail__container">
