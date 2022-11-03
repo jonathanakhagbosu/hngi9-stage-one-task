@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --Gray-900: #101828;
+  --Gray-700: #344054;
+  --Gray-600: #475467;
+  --Gray-500: #667085;
+  --Gray-300: #d0d5dd;
+  --Primary-700: #175cd3;
+  --Primary-600: #1570ef;
+  --Primary-300: #84caff;
+}
+
 body {
   color: #101828;
   font-size: 18px;
@@ -92,6 +103,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
   body {
     font-size: 14px;
     font-weight: 500;
